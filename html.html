@@ -121,10 +121,56 @@
                 as opposed to trying to link IMG29931. It is also common to have a folder called Images or 
                 images within your project folder, just to keep them organized and out of the way.
             </p>
+           <p>To place an image within your webpage, use the img tag as follows </p> 
+           <p>&lt;img src = "images/filename.jpg" alt="a photo of x"&gt;</p>
+           <p>The src attribute tells the tag where to get the file, and the images/ tells it to look in the 
+            images folder for a jpg file with name filename. The alt attribute means that if you image doesn't 
+            load for any reason, it will instead display the alt text provided. This is used to briefly 
+            describe the image (eg the chipotle logo) and is different than the alt text provided alongside 
+            images to thouroughly describe them to visually impaired users.
+           </p>
+           <p>You can also use more attributes such as height and width to describe other features of your 
+            image. Additionally, it is commonplace to compress images so that they do not take up an 
+            unreasonable amount of space, or to make sure they are the right file type. There are many image
+            compressors online. Finally, there are certain types of files that cannot be used to display an 
+            image. Some approved file types include jpg, jpeg, png, gif, and webp. Some inapplicable file 
+            types include jfif, html, and .txt or .doc. These will not display an image.
+           </p>
 
             <h2>Links</h2>
-            <p></p>
-
+            <p>Here is a list of some link types and examples.</p>
+            <dl>
+                <dt>hyperlink</dt>
+                <dd>text, or sometimes images, that can be clicked to access other content</dd>
+                <dt>anchor tag</dt>
+                <dd>the HTML tag used to link content on a webpage</dd>\
+                <dd>eg: &lt;a href="index.html"&gt;Home&lt;/a&gt;</dd>
+                <dt>relative link</dt>
+                <dd>hyperlink to another file on your computer</dd>
+                <dd>eg: &lt;a href="images/seadragon.jpeg"&gt;Photo of Seadragon&lt;/a&gt;</dd>
+                <dt>image link</dt>
+                <dd>a link which displays an image on the screen instead of text</dd>
+                <dd>&lt;a href="index.html"&gt;&lt;img src="images/file.jpg" alt= "file description"&gt;&lt;/a&gt;</dd>
+                <dt>absolute link</dt>
+                <dd>hyperlink to external content via URL</dd>
+                <dd>&lt;a href="https://pastawebsite.com"&gt;Pasta&lt;/a&gt;</dd>
+                <dt>email link</dt>
+                <dd>a link directly connected to an email address</dd>
+                <dd>&lt;a href="mailto: email.address@gmail.com"&gt;Email me here!&lt;/a&gt;</dd>
+                <dt>phone number link</dt>
+                <dd>a link directly connected to a phone number</dd>
+                <dd>&lt;a href="tel: +1##########"&gt;Call me here!&lt;/a&gt;</dd>
+                <dd>*note: make sure to include country code here!</dd>
+                <dt>embedded map</dt>
+                <dd>you can actually get a link from google maps that is set up to be embedded in a webpage!</dd>
+                <dd>go to google maps -> share -> embed a map -> copy html and you should get an iframe element tag</dd>
+                <dd></dd>
+            </dl>
+            <p>Note that the source your link takes you to is generally located in the href attribute, or src in 
+                the case of images. The text between the opening and closing tags will be what appears on the 
+                screen in the case of text links. Also, you can add attributes to your links to specify the manner 
+                in which they open. My favorite is target="_blank" which opens the link in a new tab!
+            </p>
 
         </main>
         <footer>
