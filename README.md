@@ -1,6 +1,6 @@
 # summer2024learning
 
-link: 
+link: https://github.com/EPAUL04/summer2024learning.git
 
 python refresh
 - How to Think Like a Computer Scientist ~ https://runestone.academy/ns/books/published/thinkcspy/index.html
