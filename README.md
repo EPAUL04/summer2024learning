@@ -10,3 +10,9 @@ ap csp refresh
 
 CSS and HTML refresh
 - old notebook from Web Design
+
+
+# plan
+- do CSS review from notebook
+- begin python review from textbook
+- begin ap csp review from code.org
