@@ -67,6 +67,51 @@
                 needs of the website. You link a stylesheet by using a link element as follows: &lt;link rel 
                 = "stylesheet" href = "styles.css"&gt;. A link element has no closing tag.
             </p>
+            <br>
+            <h2>Precedence</h2>
+            <p>
+                The "Cascading" in Cascading Style Sheets comes from the hierarchy of style rules it employs, 
+                also called precedence or priority. There are two ways to look at this hierarchy. First, by 
+                considering the breadth of the different forms of style rule sets. Secondly, you can look at the 
+                priority itself that is given to each style.
+            </p>
+            <p>
+                Imagine a pyramid with the highest and smallest section being labeled "Inline", the middle section
+                being labeled "Embedded", and the lowest and largest section being labeled "External".
+            </p>
+            <p>
+                On the one 
+                hand, you can look at this pyramid and see a hierarchy of size. The smallest section of the pyramid 
+                is the inline section. This is because using inline CSS means that your rule sets are the <em>most</em>
+                specific. The external section is the largest because using an external style sheet means that your 
+                rule sets are the least specific and most broad. What this means is that the different ways of using 
+                CSS impact the breadth of control that your rule sets have. You can style more elements using an 
+                external style sheet, just because the nature of an external style sheet is such that you can change 
+                and control what you want to happen to each element. In an inline style sheet, it is more specific 
+                because it usually applies to one or two elements and usually only does one or two things. Basically, 
+                an external style sheet gives you more general control over the whole document while inline CSS is 
+                used to make very a couple very specific changes. Remember, inline rule sets mean that you're using 
+                the style attribute within some other element. The reason that I even said this can apply to one or
+                two elements instead of just one is that the span tag can be used to make sure that a specific style 
+                is applied to all elements within the span element. Theoretically, you could use the span element on 
+                a very large portion of the document, even the whole main section. However, using it to style more 
+                than a couple elements at a time kind of indicates that maybe you should just use an embedded style 
+                sheet, because it is kind of clumsy coding imo.
+            </p>
+            <p>
+                Anyway, there is also another way to look at this hierarchy, as previously mentioned. Instead of 
+                looking at the size of the various sections, you can also look at the height of the sections. 
+                Inline CSS may be the smallest/most specific section, but it also the highest up on the pyramid. 
+                This is because inline style rule sets have the highest priority. External style sheets have the 
+                lowest priority. This means that the document will use the rule sets in an external style sheet, 
+                but if any rule sets are contradicted by an embedded style sheet, it will use those and overrule 
+                the external style sheet. Similarly, if any inline style rules are applied, these will be applied 
+                regardless of any external <em>or</em> internal style sheets. So if you had a rule within an 
+                external style sheet that said all paragraph elements have white bold text, but a rule in an 
+                embedded style sheet said that main paragraph elements have green size 14 text, and a rule in the 
+                inline style sheet said that this specific paragraph element had non-bold size 8 text, you 
+                would be looking at this: <span style="color: green; font-size: 8;">paragraph element</span>.
+            </p>
         </main>
         <footer>
             
