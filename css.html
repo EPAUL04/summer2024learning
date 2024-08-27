@@ -39,7 +39,6 @@
                 &lt;/p&gt; and would create this result:
             </p>
             <p style="color: red;">Special</p>
-            <br>
             <h3>Embedded Style Sheet</h3>
             <p>
                 An embedded style sheet means including a portion of a stylesheet, written in CSS, within your HTML 
@@ -52,9 +51,9 @@
             </p>
             <p>
                 &lt;head&gt; <br> &nbsp;&nbsp;&nbsp; &lt;style&gt; <br>
-                h1 {<br>
-                    color: red
-                <br>} <br>
+                &nbsp;&nbsp;&nbsp; h1 {<br>
+                    &nbsp;&nbsp;&nbsp; color: red
+                <br>&nbsp;&nbsp;&nbsp; } <br>
                 &nbsp;&nbsp;&nbsp; &lt;/style&gt; <br> &lt;/head&gt;
             </p>
             <h3>External Style Sheet</h3>
@@ -112,6 +111,44 @@
                 inline style sheet said that this specific paragraph element had size 8 text, you 
                 would be looking at this: <span style="color: green; font-size: 8"><strong>paragraph element</strong></span>.
             </p>
+            <h2>CSS Rule Sets</h2>
+            <p>A rule set describes the style change for some HTML elements. A rule set has a selector (the element 
+                that you want the rule to apply to), brackets {}, and a declaration within the brackets. A 
+                declaration is made up of the property (the style attribute you want to control) as well as a value 
+                (the exact thing you want it to be). Examples of a selector are body, h1, nav li a, etc. Examples 
+                of a declaration are background-color: green;, font-size: small;, etc. In these cases, the properties 
+                are background-color and font-size, while the values are green and small.
+            </p>
+            <h2>Example Declarations</h2>
+            <ul>
+                <li>font-family: Verdana, Arial, sans-serif</li>
+                <li>font-size: 50 px or 50% or 50pt etc</li>
+                <li>font-weight: bold or normal or lighter etc</li>
+                <li>font-style: italic or normal or oblique etc</li>
+                <li>text-align: center or left or right</li>
+                <li>color: red or tomato or rgb(120, 171, 161, 0.65) or #afe179</li>
+            </ul>
+            <p>
+                notes: the font-family stuff is kind of confusing to me, you list them like that so that if the first 
+                one you listed isn't available, it will proceed to the next one. you should end the list with one of  
+                the five generic fonts: serif, sans-serif, monospace, cursive and fantasy.
+            </p>
+            <p>
+                also, there is a lot of stuff that goes into colors. First of all, "color" means the color of the font 
+                and "background-color" and etc refer to other elements' colors. also, there are multiple ways to pick a 
+                color. this includes by a CSS-recognized name, of which there are 140. you can also use rgb and rgba 
+                numbers to find a specific combination of colors. rgb refers to the red, green, blue values within the 
+                color, and rgba introduces an opacity setting that moves between, i believe, 0 and 1. you can also use 
+                hex codes, which are alphanumeric combinations that result in a color being found from a base-16 system.
+            </p>
+            <p>
+                there are some special selectors, such as div id (a div with the id "id" can be called using #id {) and 
+                classes (eg all elements with a "class" class can be called with .class {). for a more comprehensive 
+                list, check out <a href="https://www.w3schools.com/cssref/css_selectors.php">this link</a>. use commas 
+                between selectors to choose multiple and spaces between selectors to choose subgroups within the first 
+                selector (parent > child).
+            </p>
+            <h2>Block vs Inline</h2>
         </main>
         <footer>
             
