@@ -24,7 +24,49 @@
             </ul>
         </nav>
         <main>
-            
+            <h2>CSS Overview</h2>
+            <p>
+                CSS stands for Cascading Style Sheets, and it is a way to style your websites. It uses different 
+                style rules or rule sets to change various elements. There are three main ways to use CSS, as 
+                explained below.
+            </p>
+            <h3>Inline Style</h3>
+            <p>
+                This involves using additional HTML code to add styles to your webpage. It is typically used when 
+                there is just one little change you want to make. For example, I used inline style CSS in the HTML 
+                page in this website to change the colors of the headings when talking about how to map a website. 
+                Visually, using inline style would look like this: &lt;p style = "color: red" &gt; Special 
+                &lt;/p&gt; and would create this result:
+            </p>
+            <p style="color: red;">Special</p>
+            <br>
+            <h3>Embedded Style Sheet</h3>
+            <p>
+                An embedded style sheet means including a portion of a stylesheet, written in CSS, within your HTML 
+                code for the webpage. I have never specifically used this myself, but I imagine this would be 
+                helpful when you just have a couple specific changes that you want applied to the whole document. 
+                When using an embedded style sheet, the style sheet is placed within the head of the document. I 
+                believe this is just convention, and I'm not sure whether the placement of the stylesheet affects 
+                things. You use the &lt;style&gt; tag to show that you are including a style sheet, as shown below. 
+                This set of rules would mean that every h1 element within the document would be red.
+            </p>
+            <p>
+                &lt;head&gt; <br> &nbsp;&nbsp;&nbsp; &lt;style&gt; <br>
+                h1 {<br>
+                    color: red
+                <br>} <br>
+                &nbsp;&nbsp;&nbsp; &lt;/style&gt; <br> &lt;/head&gt;
+            </p>
+            <h3>External Style Sheet</h3>
+            <p>
+                An external style sheet is one that you write separately, in CSS, and then link inside the HTML 
+                document. This is helpful when you have a lot of rule sets that you want to include, or when you 
+                have rule sets affecting several different types of elements. It is also, in my understanding, 
+                quite a common practice just as a way to stay organized. It is helpful to have all of your rule 
+                sets in one place where they can be easily grouped, tracked, and manipulated depending on the 
+                needs of the website. You link a stylesheet by using a link element as follows: &lt;link rel 
+                = "stylesheet" href = "styles.css"&gt;. A link element has no closing tag.
+            </p>
         </main>
         <footer>
             
