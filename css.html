@@ -150,7 +150,75 @@
                 selector (parent > child).
             </p>
             <h2>Block vs Inline</h2>
-            <p>inline: elements can be on </p>
+            <p>inline: elements can be on the same line</p>
+            <ul>
+                <li>&lt;a&gt;</li>
+                <li>&lt;img&gt;</li>
+            </ul>
+            <p>block: elements start and end with a new line</p>
+            <ul>
+                <li>&lt;p&gt;</li>
+                <li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc...</li>
+                <li>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;</li>
+                <li>&lt;header&gt;, &lt;nav&gt;, etc...</li>
+            </ul>
+            <p>Additionally, you can use height and width properties to change the dimensions of block elements!</p>
+            <h2>Borders</h2>
+            <p>
+                A border is an outline that separates the margin and padding of a block element. Some declarations related 
+                to a border include:
+            </p>
+            <ul>
+                <li>border-style: solid/dotted/dashed/none/double/etc</li>
+                <li>border-color: </li>
+                <li>border-width: 8px/10%/5em/etc</li>
+                <li>border-radius: 16px/5%/etc (makes your border rounded instead of rectangular!!!)</li>
+            </ul>
+            <p>
+                You can also use border-left-style or similar properties to only change one side or part of the border as 
+                opposed to the whole border all the way around the content.
+            </p>
+            <h2>Margin and Padding</h2>
+            <p>margin: passive space between block and edge of page</p>
+            <p>padding: passive space between border and content</p>
+            <p>
+                So basically, if you were to have a paragraph element with a border around it, the margin would be the 
+                space between the border and the edge of the page, and the padding woule be the space between the border 
+                and the actual text.
+            </p>
+            <p>
+                When you want to edit the margin or padding of a webpage, you can use the property margin: or padding: 
+                respectively to edit the margin or padding on all sides of the content. You can also specify which side 
+                or part of the margin/padding you want to change, such as by using margin-top: or padding-left:.
+            </p>
+            <h2>Units</h2>
+            <ul>
+                <li>px = pixels</li>
+                <li>em = ephemeral unit (1 em = default font size)</li>
+                <li>% = percent of parent element (so if you're looking at an h1 element within the header, setting its 
+                    height to 100% will not take up the whole screen, just the whole header)
+                </li>
+            </ul>
+            <h2>Float and Clear</h2>
+            <p>
+                Float is a property that allows you to move an element to the left or right of another element instead of 
+                having everything stay stacked on top of each other. It is my bestie ever, except it is also evil and
+                complicated about everything.
+            </p>
+            <p>Clear is the property that cancels the effects of float on another element.</p>
+            <p>Auto is a value that tells the computer to balance clear and float and basically figure it out itself.</p>
+            <br>
+            <h3>Changing Lists:</h3>
+            <p>list-style-type: changes the bullets or numbering. You can pick shapes for the bullets, like circle/square
+                /etc or pick between numbering systems such as upper-roman/lower-alpha
+            </p>
+            <p>list-style-position: inside/outside changes the bullet alignment if your text runs over to the next line. 
+                Inside means that the text aligns with the bullet itself, so the bullets fall in between lines of text. 
+                Outside means that the text instead aligns with the text on the line above so that the bullets stick 
+                out between aligned lines of text.
+            </p>
+            <p>list-style-image: changes bullets to an image using url(' ') as the value</p>
+            <h2>Responsive Design</h2>
         </main>
         <footer>
             
