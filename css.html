@@ -299,7 +299,67 @@
                 element. You can reference classes in your selectors by using a period in front of the class name, such as 
                 .headings. You can reference an id in your selectors by using a hashtag/pound sign, such as #emphasized-p.
             </p>
-            <h2></h2>
+            <h2>Media Query</h2>
+            <p>
+                A media query asks the display for media type and browser characteristics such as the window size and 
+                orientation. There are a couple types of media queries.
+            </p>
+            <p>
+                Our first type of media query selects a CSS file and is located in the head of the HTML document. Here is an 
+                example of what this type of media query would look like if you were to create three separate stylesheets 
+                according to device type and screen width:
+            </p>
+            <p>
+                &lt;link rel = "stylesheet" href = "css/styles-mobile.css" media = "screen and (max-width:480px)"&gt; <br>
+                &lt;link rel = "stylesheet" href = "css/styles-tablet.css" media = "screen and (min-width: 481px)"&gt; <br>
+                &lt;link rel = "stylesheet" href = "css/styles-desktop.css" media = "screen and (min-width: 769px)"&gt; 
+            </p>
+            <p>please note that you can also use multiple media features such as both a min and max width. please also note 
+                that in the above example, "screen" creates a reference that the stylesheet will look back on when deciding 
+                what rule sets do and don't apply. i think technically screen is a class or something but i'm not fully certain
+            </p>
+            <p>Here is an example of a media query that selects within the CSS rule sets:</p>
+            <p>
+                @media screen and (max-width: 480px) {
+                    &nbsp;&nbsp;&nbsp; //nav -> horizontal and centered for mobile
+                }
+            </p>
+            <p>This example only selects for a mobile screen smaller than 481px because it is assuming that the default is  
+                to have the nav bar vertical and to the side, which it applies to both tablet and desktop screens greater 
+                than 480px. This is therefore an example of a traditional approach to responsive design, where the website 
+                is first built for larger screens and is then adapted to smaller ones. A mobile-first approach would probably 
+                have a min-width selector instead so that the default is whatever the mobile situation is while anything 
+                larger gets its own set of rules.
+            </p>
+            <p>
+                There are also ultra-wide monitors such as projector screens and gaming monitors. Sometimes, you want to 
+                select for these specifically so that you can increase the margin size so that there is space on the left 
+                and right sides of the screen rather than stretching the website too far and making it hard to read. You 
+                could also probably increase the font size or something just to make it a little easier to read on such a 
+                large screen.
+            </p>
+            <p>
+                You can also select for printing so that your document formats itself for printing, such as by removing 
+                pointless images and decorations, and by removing colors so you don't wasste ink and etc and etc. Here's 
+                an example of a media query for printing:
+            </p>
+            <p>
+                @ media print {
+                    &nbsp;&nbsp;&nbsp; body {
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: white;
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color: black;
+                    &nbsp;&nbsp;&nbsp;}
+                }
+            </p>
+            <h2>Dynamic Pseudoclasses</h2>
+            <p>Dynamic pseudoclasses are groups of elements that change based in some criteria. Examples incude:</p>
+            <ul style="list-style-type: none;">
+                <li>:link -> unvisisited links</li>
+                <li>:visited -> visited links</li>
+                <li>:hover -> when you're actively hovering over a link</li>
+                <li>:active -> the moment a link is clicked</li>
+            </ul>
+            <p>You can style these so that certain affects occur based on what is happening to the link!</p>
         </main>
         <footer>
             <p>source: notes from Web Design</p>
