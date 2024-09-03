@@ -207,8 +207,7 @@
             </p>
             <p>Clear is the property that cancels the effects of float on another element.</p>
             <p>Auto is a value that tells the computer to balance clear and float and basically figure it out itself.</p>
-            <br>
-            <h3>Changing Lists:</h3>
+            <h2>Changing Lists</h2>
             <p>list-style-type: changes the bullets or numbering. You can pick shapes for the bullets, like circle/square
                 /etc or pick between numbering systems such as upper-roman/lower-alpha
             </p>
@@ -219,6 +218,88 @@
             </p>
             <p>list-style-image: changes bullets to an image using url(' ') as the value</p>
             <h2>Responsive Design</h2>
+            <p>
+                When making a website, you have to remember that people will view it on different devices with different 
+                screen sizes. Responsive design is a way of making sure that your website can resize itself to accomodate 
+                different sizes of screens and browser windows. You can do this by having elements set to auto sizing or 
+                to percentage based sizing. It is okay if some elements have a fixed size if you really want to make sure 
+                that something is always exactly 300px or whatever, but aside from that you should really make sure your 
+                values are not fixed.You can use CSS properties like max-width to make sure that an element never takes 
+                up more than, say, 5% of the main or nav or whatever.
+            </p>
+            <p>
+                The traditional approach to responsive design was to begin with a desktop-appropriate website and then 
+                change it to work for smaller screens. There is even a way to make a separate website for mobile as 
+                opposed to adapting your current website. In this approach, the mobile site has the same address but with 
+                https://m. in front of everything else. But as cellphones have gained popularity, it has become more 
+                common to utilize a mobile-first approach in which website are first developed for phones and then sized 
+                up for larger devices.
+            </p>
+            <p>
+                In addition to fixed layouts (where elements have a set/specific size that does not change), there are also 
+                fluid layouts where elements adjust to fit the size of the viewport. A fixed layout typically uses pixels 
+                while a fluid layout more often uses percentage. The em unit is technically also relative/fluid as it adjusts 
+                to the size of the default font size, which can change with browsers and etc.
+            </p>
+            <p>
+                In responsive design, the critical concept is that smaller viewports should have access to less information 
+                and a more simple website, while larger viewports have access to more information and things like images or 
+                sidebars that you may not want to use for smaller viewports. Additionally, mobile websites/smaller viewports 
+                should be navigating differently than websites for larger viewports. Usually, a mobile website should just 
+                have the ABSOLUTE MOST important info on the home page, and then should have a little hamburger or other 
+                navigation tool to take you to various pages with more specific info and more details.
+            </p>
+            <p>
+                The tag used to implement responsive design is &lt;meta name = "viewport" content = "width-device-width, 
+                initial-scale = 1.0"&gt;. This tag has a name attribute (name = "viewport") to tell the computer that this 
+                tag relates to viewports/responsive design. It also has a content attribute so that it can get the width 
+                value and the initial-scale value to specify the width of the device as well as the level to which the 
+                webpage should be 'zoomed in'. This prevents the situation where you open a website on a phone and see the 
+                normal desktop website, just very zoomed out, so that you don't have to scroll around to read stuff.
+            </p>
+            <h3>CSS Reset</h3>
+            <p>
+                A CSS Reset sets all of your default vaues for things like padding and margin to 0 so that you can start 
+                from a clean slate, so to speak, and better control and resize your website. It also can be used to make 
+                sure your website looks the same on every screen.
+            </p>
+            <h3>Sticky Elements</h3>
+            <p>Sticky elements are always visible on a screen, even when a user scrolls down. Here's what that looks like: </p>
+            <p>
+                position: sticky;<br>top: 0; (so it stays right at the very top of the page)<br>position: -webkit-sticky; 
+                (some browsers - in this case safari - require their own specific bullshit)<br>background-color: whatever; 
+                (specify this or it will become transparent and overlap with other elements)
+            </p>
+            <h2>Font Principles</h2>
+            <ol>
+                <li>text should <strong>always</strong> be legible</li>
+                <li>three or less fonts</li>
+                <li>pair serif and sans-serif fonts</li>
+            </ol>
+            <p>In case you have for some strange reason forgotten, a serif font has the embellishments and a sans-serif 
+                does not
+            </p>
+            <h2>Classes and Pseudoclasses</h2>
+            <p>
+                Pseudoclasses are used to reference a group or type of element. It isn't the same as the class attribute, 
+                so they're not a real class that is defined by the programmer. An example of a psuedoclass being called 
+                in the stylesheet is nav li:first-child: which is use to reference the psuedoclass of the first item in 
+                lists throughout the document.
+            </p>
+            <p>
+                In responsive design, you may have some elements that you really only want seen by one device type or 
+                another. You can use the class attribute to mark something as 'mobile' or 'tablet-desktop' so that you can  
+                go back in the stylesheet and hide mobile elements when the viewport is larger than however many pixels 
+                and hide tablet-desktop elements when the viewport is smaller than however many pixels. This way, only 
+                one class is visible at a time so that your page is easily accessed by different viewports.
+            </p>
+            <p>
+                Additionally, there is another attribute called "id". This is <em>not</em> the same as a class attribute. 
+                The class attribute groups multiple elements while the id attribute is a unique identifier of one specific 
+                element. You can reference classes in your selectors by using a period in front of the class name, such as 
+                .headings. You can reference an id in your selectors by using a hashtag/pound sign, such as #emphasized-p.
+            </p>
+            <h2></h2>
         </main>
         <footer>
             <p>source: notes from Web Design</p>
