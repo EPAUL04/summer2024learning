@@ -44,5 +44,11 @@ footer {
     font-size: x-small;
     background-color: #CAD2C5;
     color: #52796F;
+}
+footer p {
     display: inline;
+}
+footer p a {
+    text-decoration: none;
+    color: #84A98C;
 }
