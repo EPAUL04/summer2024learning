@@ -41,7 +41,7 @@ main {
     background-color: #CAD2C5;
     color: #2F3E46;
     height: 100%;
-    padding: 15%;
+    padding: 5%;
     line-height: 20px;
 }
 main img {
@@ -50,6 +50,10 @@ main img {
 main h1, main h2, main h3 {
     padding-top: 5%;
     padding-bottom: 5%;
+}
+main p {
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 footer {
