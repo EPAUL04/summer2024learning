@@ -8,13 +8,13 @@
 header {
     text-align: center;
     background-color: #52796F;
-    height: 10%;
+    height: 25%;
 }
 
 nav {
     text-align: center;
     background-color: #2F3E46;
-    height: 5%;
+    height: 10%;
 }
 nav ul li {
     list-style-type: none;
@@ -36,7 +36,7 @@ nav ul li a:visited {
 main {
     background-color: #CAD2C5;
     color: #2F3E46;
-    height: 85%;
+    height: 70%;
 }
 
 footer {
