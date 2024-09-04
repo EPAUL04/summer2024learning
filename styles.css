@@ -18,7 +18,7 @@ nav ul li {
     display: inline;
 }
 nav ul li::before {
-    content: ' &#10025; ';
+    content: ' ✩';
 }
 nav ul li:first-child::before {
     content: none;
