@@ -13,6 +13,5 @@ CSS and HTML refresh
 
 
 # plan
-- do CSS review from notebook
 - begin python review from textbook
 - begin ap csp review from code.org
