@@ -8,7 +8,7 @@ header {
     text-align: center;
     background-color: #52796F;
     color: white;
-    height: 35%;
+    height: 25%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -16,7 +16,7 @@ header {
 nav {
     text-align: center;
     background-color: #2F3E46;
-    height: 15%;
+    height: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -24,7 +24,10 @@ nav ul li {
     list-style-type: none;
     display: inline;
 }
-
+nav ul li a {
+    color: #84A98C;
+    text-decoration: none;
+}
 nav ul li a:hover, nav ul li a:active {
     color: #CAD2C5;
     text-decoration: solid;
@@ -40,12 +43,8 @@ main {
     height: 100%;
     padding: 5%;
 }
-main p {
-    padding-left: 10%;
-    padding-right:10%;
-}
 main img {
-    text-align: center;
+    float: right;
 }
 
 footer {
