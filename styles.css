@@ -1,7 +1,21 @@
-html {
-    background-color: #84A98C;
-}
-
 header {
     text-align: center;
+    background-color: #52796F;
+}
+
+nav {
+    text-align: center;
+    background-color: #2F3E46;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+nav ul li a {
+    color: #84A98C;
+}
+
+main {
+    background-color: #CAD2C5;
+    color: #2F3E46;
 }
