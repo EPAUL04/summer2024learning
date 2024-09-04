@@ -15,7 +15,7 @@ header {
 
 nav {
     text-align: center;
-    background-color: green;
+    background-color: #2F3E46;
     height: 15%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -43,11 +43,12 @@ main {
     height: 100%;
     padding: 5%;
 }
-main p, main img {
-    text-align: center;
+main p {
+    padding-left: 10%;
+    padding-right:10%;
 }
-main ul, main ol, main dl {
-    padding-left: 30%;
+main img {
+    text-align: center;
 }
 
 footer {
