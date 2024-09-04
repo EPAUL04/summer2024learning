@@ -23,6 +23,7 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #CAD2C5;
+    text-decoration: solid;
 }
 nav ul li a:visited {
     color: #84A98C;
