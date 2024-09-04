@@ -7,7 +7,7 @@
 header {
     text-align: center;
     background-color: #52796F;
-    height: 50%;
+    height: 35%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -15,7 +15,7 @@ header {
 nav {
     text-align: center;
     background-color: #2F3E46;
-    height: 30%;
+    height: 15%;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -39,7 +39,7 @@ nav ul li a:visited {
 main {
     background-color: #CAD2C5;
     color: #2F3E46;
-    height: 70%;
+    height: 100%;
     padding: 5%;
 }
 
