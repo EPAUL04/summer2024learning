@@ -17,13 +17,6 @@ nav ul li {
     list-style-type: none;
     display: inline;
 }
-nav ul li::before {
-    content: ' ✩';
-    color: #84A98C;
-}
-nav ul li:first-child::before {
-    content: none;
-}
 nav ul li a {
     color: #84A98C;
     text-decoration: none;
