@@ -24,10 +24,7 @@ nav ul li {
     list-style-type: none;
     display: inline;
 }
-nav ul li a {
-    color: #84A98C;
-    text-decoration: none;
-}
+
 nav ul li a:hover, nav ul li a:active {
     color: #CAD2C5;
     text-decoration: solid;
