@@ -1,4 +1,4 @@
-body {
+body {       /*if this doesnt work try *, its supposed to be the universal selector*/
     margin: 0;
     padding: 0;
     border: 0;
