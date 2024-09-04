@@ -47,6 +47,10 @@ main {
 main img {
     float: right;
 }
+main h1, main h2, main h3 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 footer {
     font-size: small;
