@@ -42,6 +42,7 @@ main {
     color: #2F3E46;
     height: 100%;
     padding: 5%;
+    padding-bottom: 10%; 
 }
 main img {
     float: right;
