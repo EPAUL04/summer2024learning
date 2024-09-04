@@ -18,7 +18,7 @@ nav ul li {
     display: inline;
 }
 nav ul li::before {
-    content: ' &nbsp; &#10025; &nbsp; ';
+    content: '/10025';
 }
 nav ul li:first-child::before {
     content: none;
