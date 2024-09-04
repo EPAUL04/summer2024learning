@@ -13,9 +13,24 @@ nav ul li {
 }
 nav ul li a {
     color: #84A98C;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #CAD2C5;
+}
+nav ul li a:visited {
+    color: #84A98C;
+    text-decoration: none;
 }
 
 main {
     background-color: #CAD2C5;
     color: #2F3E46;
+}
+
+footer {
+    font-size: x-small;
+    background-color: #CAD2C5;
+    color: #52796F;
+    display: inline;
 }
