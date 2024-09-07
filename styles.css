@@ -48,7 +48,6 @@ main img {
     float: right;
 }
 main h1, main h2, main h3 {
-    padding-top: 10px;
     padding-bottom: 10px;
 }
 main p {
