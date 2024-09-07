@@ -47,14 +47,14 @@ main {
 main img {
     float: right;
 }
-main h1, main h2, main h3 {
+/* main h1, main h2, main h3 {
     padding-top: 2%;
     padding-bottom: 2%;
 }
 main p {
     padding-top: 2%;
     padding-bottom: 2%;
-}
+} */
 
 footer {
     font-size: small;
