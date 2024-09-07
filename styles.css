@@ -8,7 +8,7 @@ header {
     text-align: center;
     background-color: #52796F;
     color: white;
-    height: 8%;
+    height: 6%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
@@ -16,7 +16,7 @@ header {
 nav {
     text-align: center;
     background-color: #2F3E46;
-    height: 5%;
+    height: 3%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -41,6 +41,7 @@ main {
     background-color: #CAD2C5;
     color: #2F3E46;
     height: 100%;
+    padding: 5%;
     line-height: 20px;
 }
 main img {
