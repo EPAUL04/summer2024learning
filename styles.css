@@ -9,16 +9,16 @@ header {
     background-color: #52796F;
     color: white;
     height: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 nav {
     text-align: center;
     background-color: #2F3E46;
     height: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 nav ul li {
     list-style-type: none;
