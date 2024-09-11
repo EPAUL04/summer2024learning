@@ -24,10 +24,6 @@ nav ul li {
     list-style-type: none;
     display: inline;
 }
-nav ul li a {
-    color: #84A98C;
-    text-decoration: none;
-}
 nav ul li button {
     background-color: #2F3E46;
     color: #84A98C;
@@ -47,7 +43,7 @@ nav ul li a:visited {
     color:#2F3E46;
 }
 .darkmode nav ul li button {
-    background-color: #CAD2C5;
+    background-color: white;
     color: #84A98C;
 }
 
