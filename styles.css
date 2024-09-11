@@ -87,9 +87,6 @@ main .psuedo {
     color:#52796F;
     font-family:'Courier New', Courier, monospace;
 }
-main img {
-    width: 30%;
-}
 .darkmode main {
     background-color: #2F3E46;
     padding: 3%;
