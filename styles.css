@@ -36,10 +36,10 @@ nav ul li a:visited {
     color: #84A98C;
     text-decoration: none;
 }
-.darkmode nav {
+.darkmode nav, .darkmode nav ul li button {
     background-color: #CAD2C5;
 }
-.darkmode nav ul li a, nav ul li button {
+.darkmode nav ul li a, .darkmode nav ul li button {
     color:#2F3E46;
 }
 
