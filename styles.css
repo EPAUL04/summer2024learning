@@ -24,7 +24,7 @@ nav ul li {
     list-style-type: none;
     display: inline;
 }
-/* nav ul li a: {
+nav ul li a {
     color: #84A98C;
     text-decoration: none;
 }
@@ -49,7 +49,7 @@ nav ul li a:visited {
 .darkmode nav ul li button {
     background-color: white;
     color: #84A98C;
-} */
+}
 
 main {
     color: #2F3E46;
@@ -100,7 +100,7 @@ main .group img {
     padding: 3%;
     line-height: 20px;
 }
-.darkmode main p {
+.darkmode main p, .darkmode main h1, .darkmode main h3 {
     color:white;
 }
 
