@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+        </script>
         <header>
         <h1>Intro to Python</h1>
         </header>
@@ -20,15 +26,12 @@
                     <a href="html.html" >HTML &#10025; </a>
                 </li>
                 <li>
-                    <a href="css.html" >CSS</a>
+                    <a href="css.html" >CSS &#10025; </a>
+                </li>
+                <li>
+                    <button onclick="myFunction()">Dark mode</button>
                 </li>
             </ul>
-            <script>
-                function myFunction() {
-                   var element = document.nav;
-                   element.classList.toggle("dark-mode");
-                }
-                </script>
         </nav>
         <main>
             <h1>Programming Tips</h1>
