@@ -50,7 +50,7 @@
                 things. You use the &lt;style&gt; tag to show that you are including a style sheet, as shown below. 
                 This set of rules would mean that every h1 element within the document would be red.
             </p>
-            <p>
+            <p class="psuedo">
                 &lt;head&gt; <br> &nbsp;&nbsp;&nbsp; &lt;style&gt; <br>
                 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; h1 {<br>
                     &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color: red
@@ -310,7 +310,7 @@
                 example of what this type of media query would look like if you were to create three separate stylesheets 
                 according to device type and screen width:
             </p>
-            <p>
+            <p class="psuedo">
                 &lt;link rel = "stylesheet" href = "css/styles-mobile.css" media = "screen and (max-width:480px)"&gt; <br>
                 &lt;link rel = "stylesheet" href = "css/styles-tablet.css" media = "screen and (min-width: 481px)"&gt; <br>
                 &lt;link rel = "stylesheet" href = "css/styles-desktop.css" media = "screen and (min-width: 769px)"&gt; 
@@ -320,9 +320,9 @@
                 what rule sets do and don't apply. i think technically screen is a class or something but i'm not fully certain
             </p>
             <p>Here is an example of a media query that selects within the CSS rule sets:</p>
-            <p>
-                @media screen and (max-width: 480px) {
-                    &nbsp;&nbsp;&nbsp; //nav -> horizontal and centered for mobile
+            <p class="psuedo">
+                @media screen and (max-width: 480px) { <br>
+                    &nbsp;&nbsp;&nbsp; //nav -> horizontal and centered for mobile<br>
                 }
             </p>
             <p>This example only selects for a mobile screen smaller than 481px because it is assuming that the default is  
@@ -344,12 +344,12 @@
                 pointless images and decorations, and by removing colors so you don't wasste ink and etc and etc. Here's 
                 an example of a media query for printing:
             </p>
-            <p>
-                @ media print {
-                    &nbsp;&nbsp;&nbsp; body {
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: white;
-                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color: black;
-                    &nbsp;&nbsp;&nbsp;}
+            <p class="psuedo">
+                @ media print {<br>
+                    &nbsp;&nbsp;&nbsp; body {<br>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; background-color: white;<br>
+                        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; color: black;<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
                 }
             </p>
             <h2>Dynamic Pseudoclasses</h2>
