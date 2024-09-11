@@ -10,8 +10,10 @@
     <body>
         <script>
             function myFunction() {
-               var element = document.body;
-               element.classList.toggle("darkmode");
+                var elementNav = document.nav;
+                var elementMain = document.main;
+                elementMain.classList.toggle("darkmode");
+                elementNav.classList.toggle("darkmode");
             }
         </script>
         <header>
@@ -29,7 +31,7 @@
                     <a href="css.html" >CSS &#10025; </a>
                 </li>
                 <li>
-                    <button onclick="myFunction()">Dark mode</button>
+                    <a><button onclick="myFunction()">Dark mode!</button></a>
                 </li>
             </ul>
         </nav>
