@@ -86,13 +86,9 @@ main dl dt {
 }
 main .psuedo {
     color:#52796F;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
-main .group {
-    display: block;
-    padding:inherit;
-}
-main .group img {
+main img {
     width: 30%;
 }
 .darkmode main {
