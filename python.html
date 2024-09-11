@@ -293,7 +293,7 @@
                 if you want to. All of this is followed by a colon and then your code to execute (indented from the line 
                 above and lines below the function). This looks like:
             </p>
-            <p>def name(parameter, parameter):<br>statements</p><br>
+            <p>def name(parameter, parameter):<br>&nbsp; &nbsp; &nbsp; statements</p><br>
             <p>
                 The naming rules and conventions for functions in Python are, as far as I know, the same as the ones for 
                 variables. Also, the parameters of a function are basically variables specific to the function. So 
@@ -512,7 +512,7 @@
             <p>
                 Another important thing to mention is that you can use multiple elif statements in succession, and the compiler/interpreter 
                 will just keep going through them and checking their conditions until it finds one that is true. Relatedly, if you have an 
-                elif statement in which multiple conditions are true, the compiler/interpreter will only execute the code block under the 
+                elif statement in which multiple conditions are true, the compiler/iterpreter will only execute the code block under the 
                 first elif statement in which the condition is true!
             </p>
             <h3>Boolean Functions</h3>
@@ -520,6 +520,19 @@
                 Boolean functions are functions that return True or False. Many boolean functions use conditionals. It is common for boolean 
                 functions to have a name that sounds like a question, such as isDivisible or is_even_num. That way, you can call the function 
                 on a value and it will either say True or False to the "question".
+            </p>
+            <h3>Iteration</h3>
+            <p>
+                Iteration is repeatedly executing the same sequence of statements. A for loop is an example of this, and there are several 
+                more. Another way to do iteration is by using a while loop. This is a loop that executes the code block every time until a 
+                condition is false. It is common to have a sum variable that you update every time the code block executes, and have the 
+                while condition be something like "while sum != 10" or "while sum &lt; 5" so that it stops whent he sum variable reaches a 
+                certain number. One thing to note is that the while loop will not stop executing the code block in the middle even if the 
+                while condition becomes false in the middle, it will finish executing the entire code block and go back to the top of the 
+                loop where it checks whether the condition is true. If the condition is never false, your while loop will continue executing 
+                until your device runs out of space and crashes. This is called an infinite loop. A for loop is sometimes considered "definite 
+                iteration" because it repeats a specific number of times, and it is harder to get an infinite loop when using a for loop. A 
+                while loop can therefore be called indefinite iteration because we don't know how many times it will repeat.
             </p>
 
             <h1>Conceptual Programming Ideas</h1>

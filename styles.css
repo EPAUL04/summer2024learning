@@ -46,6 +46,7 @@ main {
 }
 main img {
     float: right;
+    width: 45%;
 }
 main h1, main h2, main h3 {
     padding-top: 10px;
