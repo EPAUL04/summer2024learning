@@ -8,14 +8,6 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <script>
-            function myFunction() {
-                var elementNav = document.nav;
-                var elementMain = document.main;
-                elementMain.classList.toggle("darkmode");
-                elementNav.classList.toggle("darkmode");
-            }
-        </script>
         <header>
         <h1>Intro to Python</h1>
         </header>
@@ -31,7 +23,7 @@
                     <a href="css.html" >CSS &#10025; </a>
                 </li>
                 <li>
-                    <a><button onclick="myFunction()">Dark mode!</button></a>
+                    <button onclick="myFunction()" style="background-color: #2F3E46; color: #84A98C;">Dark mode!</button>
                 </li>
             </ul>
         </nav>
@@ -652,5 +644,13 @@
         <footer>
             <p>source: <a href="https://runestone.academy/ns/books/published/thinkcspy/index.html">How to Think Like a Computer Scientist</a></p>        
         </footer>
+        <script>
+            function myFunction() {
+                var elementNav = document.nav;
+                var elementMain = document.main;
+                elementMain.classList.toggle("darkmode");
+                elementNav.classList.toggle("darkmode");
+            }
+        </script>
     </body>
 </html>
