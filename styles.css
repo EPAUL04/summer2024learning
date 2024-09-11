@@ -66,6 +66,11 @@ main ol, main ul {
 }
 main dl dt {
     padding-top: 1%;
+    text-decoration: wavy;
+}
+main .psuedo {
+    color:#52796F;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 footer {
