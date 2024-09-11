@@ -20,11 +20,11 @@ nav {
     padding-top: 2%;
     padding-bottom: 2%;
 }
-/* nav ul li {
+nav ul li {
     list-style-type: none;
     display: inline;
 }
-nav ul li a: {
+/* nav ul li a: {
     color: #84A98C;
     text-decoration: none;
 }
@@ -100,7 +100,7 @@ main .group img {
     padding: 3%;
     line-height: 20px;
 }
-.darkmode main p, .darkmode main h1, .darkmode main h3 {
+.darkmode main p {
     color:white;
 }
 
