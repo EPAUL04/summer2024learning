@@ -97,7 +97,7 @@ main .group img {
 }
 .darkmode main {
     background-color: #2F3E46;
-    color:#CAD2C5;
+    color:white;
     padding: 3%;
     line-height: 20px;
 }
