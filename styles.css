@@ -64,6 +64,9 @@ main a {
 main ol, main ul {
     padding-left: 3%;
 }
+main dl {
+    padding-bottom: 1%;
+}
 main dl dt {
     padding-top: 1%;
     text-decoration: wavy;
@@ -71,6 +74,9 @@ main dl dt {
 main .psuedo {
     color:#52796F;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main .group {
+    display: block;
 }
 
 footer {
