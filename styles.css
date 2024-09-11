@@ -42,9 +42,7 @@ nav ul li a:visited {
 }
 .darkmode nav {
     background-color: #CAD2C5;
-}
-.darkmode nav ul li a {
-    color:#2F3E46;
+    color: #2F3E46;
 }
 .darkmode nav ul li button {
     background-color: #CAD2C5;
