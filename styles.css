@@ -36,6 +36,10 @@ nav ul li a:visited {
     color: #84A98C;
     text-decoration: none;
 }
+nav .darkmode {
+    background-color: #84A98C;
+    color:#2F3E46;
+}
 
 main {
     color: #2F3E46;
@@ -76,6 +80,15 @@ main .psuedo {
 }
 main .group {
     display: block;
+}
+main .group img {
+    width: fit-content;
+}
+main .darkmode {
+    background-color: #2F3E46;
+    color:#CAD2C5;
+    padding: 3%;
+    line-height: 20px;
 }
 
 footer {
