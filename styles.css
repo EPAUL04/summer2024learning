@@ -89,9 +89,10 @@ main .psuedo {
 }
 main .group {
     display: block;
+    padding:inherit;
 }
 main .group img {
-    width: fit-content;
+    width: 30%;
 }
 .darkmode main {
     background-color: #2F3E46;
