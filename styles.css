@@ -97,9 +97,11 @@ main .group img {
 }
 .darkmode main {
     background-color: #2F3E46;
-    color:white;
     padding: 3%;
     line-height: 20px;
+}
+.darkmode main p, .darkmode main h1, .darkmode main h3 {
+    color:white;
 }
 
 footer {
