@@ -36,7 +36,7 @@ nav ul li a:visited {
     color: #84A98C;
     text-decoration: none;
 }
-nav .darkmode {
+.darkmode nav{
     background-color: #84A98C;
     color:#2F3E46;
 }
@@ -84,7 +84,7 @@ main .group {
 main .group img {
     width: fit-content;
 }
-main .darkmode {
+.darkmode main {
     background-color: #2F3E46;
     color:#CAD2C5;
     padding: 3%;
