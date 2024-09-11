@@ -48,7 +48,7 @@ nav ul li a:visited {
 }
 .darkmode nav ul li button {
     background-color: #CAD2C5;
-    color: #84A98C;
+    color: #2F3E46;
 }
 
 main {
@@ -96,7 +96,7 @@ main img {
     padding: 3%;
     line-height: 20px;
 }
-.darkmode main p, .darkmode main h1, .darkmode main h3 {
+.darkmode main p, .darkmode main h1, .darkmode main h3, .darkmode main ol li, .darkmode main ul li, .darkmode main dl dd, .darkmode main dl dt {
     color:white;
 }
 
