@@ -29,7 +29,8 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li button {
-    background-color: #84A98C;
+    background-color: #2F3E46;
+    color: #84A98C;
 }
 nav ul li a:hover, nav ul li a:active {
     color: white;
