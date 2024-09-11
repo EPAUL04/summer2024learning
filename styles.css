@@ -38,7 +38,7 @@ nav ul li a:visited {
 }
 
 main {
-    background-color: #CAD2C5;
+    background-color: #84A98C;
     color: #2F3E46;
     height: 100%;
     padding: 3%;
@@ -47,6 +47,8 @@ main {
 main img {
     float: right;
     width: 45%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 main h1, main h2, main h3 {
     padding-top: 10px;
