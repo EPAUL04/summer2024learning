@@ -484,41 +484,44 @@
                 <img src="images/if_statement.png" alt="if statement psuedocode">
             </span>
             <br>
-            <span style="display: block;">
-                <p>
-                    The boolean expression is called the condition. The if statement is fairly straightforward. If the condition is true, do 
-                    this action. If it is not true, (else) do this other action. You do not need to include the else statement if you don't 
-                    want to. In the case where an else statement is omitted, the code block under the if statement will run if the condition 
-                    is met, and the compiler/interpreter will instead proceed to the text after the if statement if the condition is not met.
-                </p>
-                <p>
-                    If you have more than one condition you want to check, there are a couple ways you can go about doing that. You can use 
-                    a nested if statement, a compound condition, or an elif statement.
-                </p>
-                <p>
-                    If you wanted to check that one condition was true first, and then check another condition once you knew it was true, you 
-                    could use nested if statements. For example, if you wanted to find out if an animal was a lap dog, you could first check 
-                    if the animal is a dog using an if-else statement. If the animal is a dog, you can then check its size with another if 
-                    statement nested inside the "if" code block of the first if statement. This nested if statement would check the size of 
-                    the dog, which would tell you whether the dog is a lap dog. Here's an example:
-                </p>
-                <img src="images/nested_if_statement.png" alt="if statement with a secondary if statement nested in the else statement">
-                <p>
-                    If you wanted to check if one condition is true in combination with another condition, you could use a compound condition. 
-                    You would use an if-else statement but change the condition in the if statement to use logical operators. Using the same 
-                    lap dog example, we would change the if statement so that it checks the type of animal <em>and</em> the size of the animal. 
-                    Here's what that would look like:
-                </p>
-                <img src="images/compound_condition_if_statement.png" alt="if statement with a compound condition using the and operator">
-                <p>
-                    Finally, you can use an elif statement when you have multiple conditions that you want to check separately. Elif means "else 
-                    if". When you use an elif statement, your if statement checks the condition. If the condition is not true, it proceeds to the 
-                    elif statement and checks if that is true. This means that there are two separate checks. In our lap dog example, this is
-                    actually kind of the least efficient way to do this just because we will have to use the compound condition if statement and
-                    so may as well have just done that by itself. But here is an example using an elif statement:
-                </p>
-                <img src="images/elif_statement.png" alt="an elif statement">
-                </span>
+            <style>
+                img {
+                    text-align: center;
+                }
+            </style>
+            <p>
+                The boolean expression is called the condition. The if statement is fairly straightforward. If the condition is true, do 
+                this action. If it is not true, (else) do this other action. You do not need to include the else statement if you don't 
+                want to. In the case where an else statement is omitted, the code block under the if statement will run if the condition 
+                is met, and the compiler/interpreter will instead proceed to the text after the if statement if the condition is not met.
+            </p>
+            <p>
+                If you have more than one condition you want to check, there are a couple ways you can go about doing that. You can use 
+                a nested if statement, a compound condition, or an elif statement.
+            </p>
+            <p>
+                If you wanted to check that one condition was true first, and then check another condition once you knew it was true, you 
+                could use nested if statements. For example, if you wanted to find out if an animal was a lap dog, you could first check 
+                if the animal is a dog using an if-else statement. If the animal is a dog, you can then check its size with another if 
+                statement nested inside the "if" code block of the first if statement. This nested if statement would check the size of 
+                the dog, which would tell you whether the dog is a lap dog. Here's an example:
+            </p>
+            <img src="images/nested_if_statement.png" alt="if statement with a secondary if statement nested in the else statement">
+            <p>
+                If you wanted to check if one condition is true in combination with another condition, you could use a compound condition. 
+                You would use an if-else statement but change the condition in the if statement to use logical operators. Using the same 
+                lap dog example, we would change the if statement so that it checks the type of animal <em>and</em> the size of the animal. 
+                Here's what that would look like:
+            </p>
+            <img src="images/compound_condition_if_statement.png" alt="if statement with a compound condition using the and operator">
+            <p>
+                Finally, you can use an elif statement when you have multiple conditions that you want to check separately. Elif means "else 
+                if". When you use an elif statement, your if statement checks the condition. If the condition is not true, it proceeds to the 
+                elif statement and checks if that is true. This means that there are two separate checks. In our lap dog example, this is
+                actually kind of the least efficient way to do this just because we will have to use the compound condition if statement and
+                so may as well have just done that by itself. But here is an example using an elif statement:
+            </p>
+            <img src="images/elif_statement.png" alt="an elif statement">
             <p>
                 Another important thing to mention is that you can use multiple elif statements in succession, and the compiler/interpreter 
                 will just keep going through them and checking their conditions until it finds one that is true. Relatedly, if you have an 
