@@ -55,6 +55,16 @@ main p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+main a {
+    color: #52796F;
+    text-decoration: none;
+}
+main ol, main ul {
+    padding-left: 5%;
+}
+main dl dt {
+    padding-top: 1%;
+}
 
 footer {
     font-size: small;
