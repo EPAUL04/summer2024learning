@@ -165,38 +165,6 @@
                 Blank lines between code are also ignored by the interpreter/compiler but can make your code 
                 a lot neater and more legible, so it is good programming practice to use them liberally.
             </p>
-            <h3>Data Types!</h3>
-            <p>
-                A value/object is something such as a word or number that a program can use or manipulate. 
-                There are different data types that a value can fall under.
-            </p>
-            <p>
-                A string is a data type that usually contains a word or phrase, although numbers can be part 
-                of a string. A string is enclosed in quotation marks; either " " or ' ' work. When you use " ", 
-                you can include ' ' as a character within your string, such as "Joy's cat" or "said 'meow'". 
-                The reverse is also true; strings denoted by ' ' can contain " " as a character. You can also 
-                use ''' ''' or """ """ if you want to include both ' ' and " " in your string. This is called 
-                a triple quoted string. A string is referred to as str in Python.
-            </p>
-            <p>
-                An integer is a whole number. It is referred to as int in Python. A floating point number is a 
-                number with a decimal point. It is referred to as float in Python. Do not put commas or spaces
-                in either of these, because that can change the way the compiler/interpreter reads the value.
-            </p>
-            <p>You can find out the data type of a value by using the type() function. It will not display to 
-                the screen automatically, because sometimes you want to use that funtion within a conditional 
-                or something, so if you want it to print to the screen, use the print function like this: 
-                print(type(__)) with your value where the underline is.
-            </p>
-            <p>
-                You can also convert a value from one data type to another. Python is especially efficient at 
-                this! It has built-in functions such as int(), float(), and str() to do this. These are type 
-                conversion functions. There are, however, some rules about how to use them. For example, int() 
-                can take a float or str and convert it to an int by discarding anything after any existing 
-                decimal points. float() can take an int, and will add a .0 to the end of it. float() can also 
-                take a string if the string has no tokens that would be invalid in a float. str() just sticks 
-                quotes around whatever you give it to convert something into a string.
-            </p>
             <h3>Variables &lt;3</h3>
             <p>
                 A variable is a name that refers to a particular value. Assignment statements create variables 
@@ -237,6 +205,215 @@
                 (eg type or print). You can use those words within the variable name if you really want to, such 
                 as var_type or str_to_print. Python programmers typically prefer to use lowercase letter in 
                 variable names, especially for the first letter.
+            </p>
+            <h3>Data Types!</h3>
+            <p>
+                A value/object is something such as a word or number that a program can use or manipulate. 
+                There are different data types that a value can fall under.
+            </p>
+            <p>
+                A string is a data type that usually contains a word or phrase, although numbers can be part 
+                of a string. A string is enclosed in quotation marks; either " " or ' ' work. When you use " ", 
+                you can include ' ' as a character within your string, such as "Joy's cat" or "said 'meow'". 
+                The reverse is also true; strings denoted by ' ' can contain " " as a character. You can also 
+                use ''' ''' or """ """ if you want to include both ' ' and " " in your string. This is called 
+                a triple quoted string. A string is referred to as str in Python. Strings are also immutable, 
+                which means you cannot change a string without completeely reassigning it. You can reassign 
+                the variable with some opertion done on the original string, though.
+            </p>
+            <p>
+                An integer is a whole number. It is referred to as int in Python. A floating point number is a 
+                number with a decimal point. It is referred to as float in Python. Do not put commas or spaces
+                in either of these, because that can change the way the compiler/interpreter reads the value.
+            </p>
+            <p>You can find out the data type of a value by using the type() function. It will not display to 
+                the screen automatically, because sometimes you want to use that funtion within a conditional 
+                or something, so if you want it to print to the screen, use the print function like this: 
+                print(type(__)) with your value where the underline is.
+            </p>
+            <p>
+                You can also convert a value from one data type to another. Python is especially efficient at 
+                this! It has built-in functions such as int(), float(), and str() to do this. These are type 
+                conversion functions. There are, however, some rules about how to use them. For example, int() 
+                can take a float or str and convert it to an int by discarding anything after any existing 
+                decimal points. float() can take an int, and will add a .0 to the end of it. float() can also 
+                take a string if the string has no tokens that would be invalid in a float. str() just sticks 
+                quotes around whatever you give it to convert something into a string.
+            </p>
+            <p>
+                Some data types, including floats and ints, are considered primitive data types, because they 
+                cannot be broken down into smaller parts. Strings and lists (we have not talked about lists 
+                yet) are two data types that can be broken down into smaller pieces, also called collection 
+                data types. Strings are typically letters and characters, and can be broken into smaller 
+                strings. You can access parts of a string by indexing it. This means that each character is 
+                assigned a number corresponding to its place. From left to right, the numbers start at 0 and 
+                count up. From right to left, the numbers start at -1 and count down. So string[0] gives you 
+                "s", string[5] gives you "g", and string[-2] gives you "n". Spaces are included as characters.
+            </p>
+            <h3>More on Strings</h3>
+            <p>
+                You can also do string slicing, which is simply getting a substring of more than one character. 
+                You do this by using a colon : in the brackets. The resulting slice will start at the first 
+                index provided but will only go up to the second without including it! Using the same string 
+                from above, string[0:5] gives you "strin" and using string[1:3] gives you "tr". You can also 
+                leave the second number off and just do string[0:] which will give you everything after the 
+                selected index. In this case, you would get "string". In the case of string[2:], you would 
+                get "ring". Similarly, you can leave the first number off to get everything up to the 
+                specified index (noninclusive). For example, string[:3] will give you "str".
+            </p>
+            <p>
+                There are also some specific string constants. These can be useful if you are looking to 
+                compare strings or find out some information about what a string contains. As you will see in 
+                the image below, you must import the string module to use these. Here is a list of the string
+                constants:
+            </p>
+            <img src="images/string_constants.png" alt="a list of the string constants and what they return">
+            <h3>Lists</h3>
+            <p>
+                Lists are another data type that have a lot of special properties and abilities, which is why 
+                they're getting their own little section.
+            </p>
+            <p>
+                A list is a collection of other values, organized in order with index numbers. The values are 
+                each called elements and can be of any data type. You can even have a list of smaller lists! 
+                In Python specifically, you can also have a list with multiple different data types. 
+            </p>
+            <p>
+                To create a new list, use square brackets and any data you want to use to fill in your list - 
+                so far; you can add to a list very easily! For example, emptyList = [] and filledList = ["a", 
+                "b", "c", 1, [2, 3]]. You can use the len() method to find out how many elements are in a list. 
+                This method also works for finding out how many characters are in a string. The information 
+                will not be printed to the screen automatically, but if you were to say print(len(filledList)), 
+                the number 5 would print to the screen. This list has three string elements, one integer element, 
+                and one list element or sublist. Accessing elements in a list works the same way that accessing 
+                characters within a string does. As a note, you can use indexing to access elements within a 
+                sublist or characters within a list like this: filledList[0][0] gives you the character "c" and 
+                filledList[4][1] gives you the integer 3.
+            </p>
+            <p>
+                You can add elements to a list by treating the list like a string. Using the filledList from 
+                above, we can add the string "hello" to it by doing filledList = filledList + ["hello"]. 
+                This is like string concatenation. Whatever you add to the list will be added onto the end. 
+                If you use the multiplication operator, you can also repeat items in the list. If you have a 
+                newList = [2, 3, 4] and you do print(newList * 2), then [2, 3, 4, 2, 3, 4] will be printed to the  
+                screen. You can also do slicing like you can with strings. newList[1:] will give you [3, 4] and 
+                newList[:2] will give you [2, 3] and newList[1:2] will give you [3]. Lists are different from 
+                strings in that they are mutable. With strings, you would have to create a new variable or reassign 
+                the existing string variable to make these changes. With lists, you can change them as they are, 
+                because they are designed to change and shrink and grow &lt;3. This means that if you want to change 
+                a particular element in a list, you can just select the item via indexing or slicing and reassign it!  
+                For example, newList[1:2] = 5 will result in newList = [2, 5, 4] and newList[2] = "hi" will result in 
+                newList = [2, 5, "hi"]. We could even take one of the elements and set them equal to an empty list to 
+                remove it! newList[0] = [] gives us newList = [5, "hi"]! Something I just learned and did not know is 
+                that you can actually use slicing to insert an element into a list at a spot that is not the end! 
+                Since newList[1:1] is not a valid slice (it is telling the computer to start at 1 and go until it 
+                reaches 1 but don't include 1), this is a way of adding an element to a list by choosing that spot. 
+                newList[1:1] = [3, 4] will give us [5, 3, 4, "hi"].
+            </p>
+            <p>
+                Although you can delete elements from a list by setting it equal to an empty list, there are also 
+                functions you can use with lists to do this. del newList[2] is an easy way to do this, as del is the 
+                name of the delete function. Other list functions include append() which adds an element, pop() which 
+                removes the last item and returns it (ie if you assign a variable to newList.pop() it will set the 
+                variable equal to "hi" and newList = [5, 3, 4]). There is also remove() in which you put a value in 
+                the parenthesis and it will take the first occurance of that value out of the list. Similarly, index() 
+                takes a parameter in the parenthesis and returns the index of the first occurance of that value. count() 
+                does something similar, returning the number of times that the value provided appears in the list. There 
+                is also sort() which sorts a list and reverse() which reverses the order of a list. Finally, there is 
+                the function insert(), which takes two parameters. The first parameter is a position in the list, and 
+                the second is a value that you want to add to that list in that position. 
+            </p>
+            <p>
+                List cloning is when you make a new list and fill it with the same elements as the old list. If you 
+                simply set a list equal to another list (a = [2, 3] and b = a), you are actually creating two 
+                variables that point to the same data. This means that if you change a, b also experiences those 
+                changes and vice versa. Instead, use slicing to clone it by saying a = [2, 3] and b = a[:]. There is 
+                also a function for this called copy().
+            </p>
+            <h3>List Comprehensions</h3>
+            <p>
+                I despised list comprehensions, they were very hard to learn. Kind of cool once you get the hang of it, 
+                though. I hope that this explanation is helpful if you choose to read this section.
+            </p>
+            <p>
+                List comprehensions are a way of creating and filling a list systematically according to a formula, all 
+                in one line. This means you create your list, and in the parenthesis you put an expression, followed by 
+                "for _ in _". This part makes it so that a definite number of elements is added to the list, and it 
+                does not just keep repeatign forever. Here is an example from the textbook:
+            </p>
+            <img src="images/list_comprehension.png" alt="an example of list comprehension">
+            <p>
+                In this case, they are using the size of mylist. But more than that, they are using each element in mylist 
+                itself, taking the value and squaring it before adding it to yourlist. The item ** 2 ie squaring is the 
+                expression, the "for item" is the "for _", and the "in mylist" is the "in _". This whole thing is saying 
+                that yourlist is made by looking at each element in mylist and squaring it.
+            </p>
+            <p>
+                Not to further complicate things, but you can also add a condition to the end of this whole situation. For 
+                example, if we wanted to make sure that we were only squaring the even numbers in mylist, we could say 
+                <span class="psuedo">yourlist = [item ** 2 for item in mylist if item % 2 == 0]</span>
+            </p>
+            <h3>Tuples</h3>
+            <p>
+                A tuple is like a list but immutable. You can index and slice a tuple but you cannot change elements the 
+                same way you cannot change letters in a string without reassigning it or something. A tuple is typically 
+                represented with parenthesis instead of square brackets, like this tuple = ("hi", "hello", "welcome"). I 
+                don't really like tuples because I feel like they are just less helpful lists, but Python people love 
+                tuple assingment and tuple unpacking. I don't feel like getting into it because I don't really get those 
+                things, but maybe one day I will come back to this section and update it... here's a link to a page on 
+                tuple assignment if that happens or if you want to read about it! 
+                <a href="https://runestone.academy/ns/books/published/thinkcspy/Lists/TupleAssignment.html">link</a>
+            </p>
+            <p>
+                The one good thing I have to say about tuples is that a function can return a tuple. Sometimes you want 
+                a function to return more than one thing, and using a tuple is the only way to do that.
+            </p>
+            <h3>Using Files</h3>
+            <p>
+                Most of the time (particularly for a marine bio/oceanography student using Python, I presume), your data 
+                will come files! So here is how to access that data!
+            </p>
+            <p>
+                To open a file, you will want to use the open() function. There are two ways of doing this. open() takes 
+                two parameters. The first is a filename, and the second is either "r" or "w". If you use "r", this tells 
+                the computer that you are opening a file with data already in it which you wish to read. If you use "w", 
+                this tells the computer to open an empty file and add data to it. "r" stands for read, and "w" for write. 
+                When you are adding data to an empty file, you are writing to a file. When you use the open() function, 
+                you are creating a reference to this file, so you will usually end up wanting to use a variable to store 
+                the file name instead of using the filename itself in that parameter. This also helps because you will 
+                need to close the file at the end of your program, which you do by referencing the variable that holds 
+                the file name and doing filevariable.close()
+            </p>
+            <p>
+                If a file is in the same folder/directory as your current program file, you can just use the program file. 
+                Otherwise, the easiest thing to do is probably to copy the file path of a file, which you can do by 
+                right-clicking on the file in your file app and selecting copy path.
+            </p>
+            <p>
+                There are a few ways to read a file. You can use a for loop where you look at each line. Basically, your
+                file is just a very long string separated by newline characters, so you can iterate through each line in
+                the file with something like <span class="psuedo">for line in filevariable:</span> and your computer will 
+                go through each line. If there are columns of data, you can use the split() function to split them into a 
+                list of values, which you can then index to get the one you need. The split() function takes a string and 
+                splits it into a list. If you do not add a parameter to specify how to split it, it splits automatically at 
+                a space between data. However, you can add a specific string to the parenthesis to clarify how you want the 
+                data split. For example, you could split the string a = "hello people" at each "l", leaving you with the  
+                list ["he", "o peop", "e"]. Note that whatever character(s) you split on will not be included in the list.  
+                If you do a.split(""), it will split every individual character like this: ["h", "e", "l", "l", "o", etc]. 
+            </p>
+            <p>
+                Another way to read a file is by using the built in file functions. Python has three methods you can use 
+                for file reading: read(), readline(), and readlines(). read() goes through the entire file at once, which 
+                is not that helpful if you need data from each line but could be useful if you wanted to know, for example, 
+                how many lines are in the file (count newlines). readline() reads only the next line, keeping it as a string. 
+                readlines() reads the entire file but keeps each line as a separate element in a list of strings. A lot of 
+                the time, I use a while loop with readline() so that I can get each line one at a time and do something with 
+                the data I need each time. In something ilke this, I usually have a variable that I use to hold the whole 
+                line which is updated every time the loop runs.
+            </p>
+            <p>
+                Writing to a file is much simpler. There is one function to write to a file, and it is write(). This function 
+                takes a string as a parameter, which is the string that you want to add to the file.
             </p>
             <h3>Statements vs Expressions</h3>
             <p>
@@ -441,6 +618,11 @@
                 which is the return statement in this case. Since we've added 2 to the total variable on each of the five times the loop 
                 ran, we should be returning a total of 10.
             </p>
+            <p>
+                Also, it is very, very common to use i as the counter variable instead of n like in the example. Like nearly every time, 
+                you will see i, especially in Java. I think it is fine to use something that is not i especially because you could use 
+                something more descriptive and clear, but just know that most of the for loops you see will use i.
+            </p>
             
             <h3>Selection</h3>
             <p>
@@ -480,6 +662,22 @@
                 Then, the comparison operators. Finally, the logical operators. There is also a 
                 hierarchy within the logical operators themselves, with "not" coming before "and" and 
                 "and" coming before "or".
+            </p>
+            <p>
+                There is also another operator used with lists and strings, which is the "in" operator. This operator 
+                checks if certain characters are in a string. For example, you can use the string "apple" and do either 
+                print("p" in "apple") which will print True, or print("pa" in "apple") which will print False, because 
+                those characters don't appear in that order in that string. This operator is also often used with the 
+                not operator to ask if a character is <em>not</em> in a string/an element in a list.
+            </p>
+            <h3>String Comparison</h3>
+            <p>
+                You can use the equivalence operator == to check if two strings are the same. You can also use some other
+                comparison operators (&lt; and &gt;) to compare the lexicographical order of two strings, ie which comes 
+                alphabetically first (although all capital letters come before all lowercase letters lexicographically). 
+                This is because the computer gives an ordinal number to all characters, which you can see by using the ord() 
+                function. When you use comparison operators to compare two strings, the computer translates the strings 
+                into their ordinal numbers and checks to see which is smaller ie first ordinally. :&rpar;
             </p>
             <h3>Conditionals</h3>
             <span>
@@ -548,6 +746,64 @@
                 iteration" because it repeats a specific number of times, and it is harder to get an infinite loop when using a for loop. A 
                 while loop can therefore be called indefinite iteration because we don't know how many times it will repeat.
             </p>
+            <h3>Nested Iteration</h3>
+            <p>
+                Nested iteration is a deeply evil and confusing process until you understand it, and then it will be your best friend ever imo. 
+                Nested iteration just means having some sort of iteration (usually for loops) nested inside each other. Here is a grid of 
+                characters for reference, and then we'll make it:
+            </p>
+            <p>
+                O O O O O<br>O O O O O<br>O O O O O<br>O O O O O<br>O O O O O
+            </p>
+            <p>
+                You can use a normal for loop to print one line of this grid. For example:
+            </p>
+            <p class="psuedo">
+                for i in range(5): <br> &nbsp; &nbsp;print("O ", end="")
+            </p>
+            <p>
+                The end="" just makes it so that when printing, it doesn't automatically add a newline after your printed characters. This way,
+                our characters all print on the same line.This will print O O O O O. So what you want to do with your nested for loops is have 
+                one for loop that acts exactly like the one above, and prints out one line of the grid. This will be your inner for loop. For 
+                the outer for loop, you need to insert a line break after a line of characters is printed. Here's what that looks like: 
+            </p>
+            <p class="psuedo">
+                for i in range(5):<br> &nbsp; &nbsp;for j in range(5):<br> &nbsp; &nbsp; &nbsp; &nbsp;print("O ", end="")<br> &nbsp; &nbsp;print("\n")
+            </p>
+            <p>
+                So what's happening here is that i is initially set to 0 and goes through its code block. First, it finds another for loop. Now 
+                j (the counter variable in the second for loop) is also set to 0, and goes through its code block by printing O (and not going 
+                to a new line). Then, j is set to 1, and it executes its code block again. This continues until we get O O O O O . The inner for 
+                loop always goes through its entire loop every time it is called within an outer for loop! Anyway, now that we have finished one 
+                line of our characters, the inner loop is finished. There is more code after the inner for loop to run, so a newline is printed. 
+                Now the outer loop continues and i is set to 1. The inner loop is called again, printing another line. Another newline is printed 
+                after the inner loop finishes, and this continues on until our whole grid has been printed. 
+            </p>
+            <p>
+                Also, a couple notes. First of all, I used i and j as counter variables here. Traditionally, you will see i as a counter variable 
+                for a loop. Since this is a local variable, it is actually still accessible in the inner loop. This means that the outer loop needs 
+                its own counter variable, so it is typical to use i, j, and (if you have a third nested loop) k. This also means that you can still 
+                use the i and j variables within that nested loop, which is useful if you're trying to do some sort of counting thing where you 
+                want to count rows and columns or total characters in the mutliple rows or whatever. Secondly, if you just have an empty print() 
+                statement, it will go to the next line. I used \n because HTML will format it with an entire blank line between each line of 
+                characters, which is better represented by \n. But it is easier to use an empty print statement and actually looks a little better, 
+                I think.
+            </p>
+            <h3>Escape Sequences</h3>
+            <p>
+                Escape sequences represent special characters that you might want to include in a string but cannot type. To add a line break 
+                in your string "red fish, blue fish old fish, new fish", you would include \n in the spot where you want the line to break. 
+                The \n comes from the word newline, which is what people use to refer to this escape sequence. The result of adding a newline 
+                in the example given would be "red fish, blue fish \n old fish, new fish" which would print out this:
+            </p>
+            <p class="psuedo">
+                red fish, blue fish<br>old fish, new fish
+            </p>
+            <p>
+                Another escape sequence is tab or \t. This escape sequence is useful for making tables, because it aligns things in columns. 
+                You can also manually type spaces into your string, but it is easier and more precise to use a \t because spaces do not 
+                help you align anything. 
+            </p>
 
             <h1>Conceptual Programming Ideas</h1>
             <p>
@@ -603,8 +859,8 @@
                 </dd>
                 <dt>len()</dt>
                 <dd>
-                    This function tells you the number of characters in a string. It does not print that 
-                    information to the screen.
+                    This function tells you the number of characters in a string or the number of elements in a 
+                    list. It does not print that information to the screen.
                 </dd>
                 <dt>input()</dt>
                 <dd>
@@ -613,7 +869,7 @@
                 </dd>
                 <dt>import __</dt>
                 <dd>
-                    This is not exactly a function, but it is a command used to import a module.
+                    This keyword is a command used to import a module.
                 </dd>
                 <dt>def __():</dt>
                 <dd>
@@ -639,6 +895,114 @@
                     parameter. There are also other ways to call range that allow you to start at a nonzero number. 
                     This method does not print the sequence. Also, this is often used in for loops along with a 
                     counter that moves through the sequence and stops the loop once it reaches the end.
+                </dd>
+                <dt>string[]</dt>
+                <dd>
+                    This keyword allows you to index into a string, ie get a subsection of the string by using 
+                    index numbers. Specifically, use the name of the variable containing the string followed by 
+                    parenthesis. So in this case, the variable name must be string.
+                </dd>
+                <dt>string.upper()</dt>
+                <dd>
+                    This function turns a string to all uppercase letters. Use the name of the variable holding 
+                    the string, not just string.
+                </dd>
+                <dt>string.lower()</dt>
+                <dd>
+                    This function turns a string to all lowercase letters. Use the name of the variable holding 
+                    the string, not just string.
+                </dd>
+                <dt>string.format()</dt>
+                <dd>
+                    This function works on strings to add information to an existing string. When you define your 
+                    string, use curly braces {} in the spot where you want to fill in information. Then, use 
+                    .format() to add the information. A common way you'll see this work is having a string like 
+                    greeting = "Hello {}!".format(name) and then name is a variable that asks the user to input 
+                    their name, so that the final greeting is "Hello Sage!" or "Hello Io!" depending on the input. 
+                    You can also put some special codes inside the braces to change how your result is displayed. 
+                    For example, if you were filling in a number that represents a price, you would want it to show 
+                    the correct amount of decimal places. You can put :.2f inside the curly braces, and it will 
+                    round to two decimal places. You can change the number to have it round to that many digits 
+                    instead. 
+                </dd>
+                <dt>ord()</dt>
+                <dd>
+                    This function checks the ordinal number of the first character.
+                </dd>
+                <dt>chr()</dt>
+                <dd>
+                    This function takes an ordinal number and turns it back into a character.
+                </dd>
+                <dt>append()</dt>
+                <dd>
+                    This function adds a new item to the end of a list, the item being whatever value you put in 
+                    the parenthesis.
+                </dd>
+                <dt>insert()</dt>
+                <dd>
+                    This function takes two parameters. The first is an index number of the position in the list 
+                    where you want ot insert an element. The second is the value you want to insert.
+                </dd>
+                <dt>pop()</dt>
+                <dd>
+                    This function can be used two ways. If you provide no parameter, it takes the last element of a 
+                    list off and returns it. If you do provide a parameter, which would be an index number of a 
+                    position in the list, it removes an element from that particular position in the list and returns 
+                    that instead of just taking the last element from the list.
+                </dd>
+                <dt>sort()</dt>
+                <dd>This function sorts a list.</dd>
+                <dt>reverse()</dt>
+                <dd>This function reverses the order of a list.</dd>
+                <dt>index()</dt>
+                <dd>
+                    This function takes a value as a parameter and returns the index of the first occurance of this 
+                    value in a list.
+                </dd>
+                <dt>count()</dt>
+                <dd>
+                    This function takes a value as a parameter and returns the number of occurances of that value in a list.
+                </dd>
+                <dt>remove()</dt>
+                <dd>
+                    This function takes a value as a parameter and removes the first occurance of that value in a list.
+                </dd>
+                <dt>split()</dt>
+                <dd>
+                    This function cna be used on a string to split the string into a list of strings. If you don't put anything 
+                    in the parenthesis, it automatically splits on the spaces between words, but you can also add a parameter 
+                    to specify where you would like it to split, such as at a particular letter or at every period. Whatever 
+                    parameter you give will be the place where the string splits, but will not be included in the list of 
+                    strings. It will be removed entirely.
+                </dd>
+                <dt>join()</dt>
+                <dd>
+                    This function is the opposite of split. You choose a string that you want to go between the elements, which 
+                    is often called the glue. Then, you take a list of strings and do glue.join(list) which will combine the 
+                    elements of the list into a single string with the glue between them.
+                </dd>
+                <dt>list()</dt>
+                <dd>
+                    This function takes a string and separates each individual character into elements in a list.
+                </dd>
+                <dt>open()</dt>
+                <dd>
+                    This function takes two parameters. The first is a filename, and the second is either "r" or "w". If you use 
+                    "r", this tells the computer that you are opening a file with data already in it which you wish to read. If 
+                    you use "w", this tells the computer to open an empty file and add data to it. "r" stands for read, and "w" 
+                    for write.
+                </dd>
+                <dt>close()</dt>
+                <dd>This function closes an open file.</dd>
+                <dt>read()</dt>
+                <dd>This function goes through the entire file at once.</dd>
+                <dt>readline()</dt>
+                <dd>This function reads only the next line, keeping it as a string.</dd>
+                <dt>readlines()</dt>
+                <dd>This function reads the entire file but keeps each line as a separate element in a list of strings.</dd>
+                <dt>write()</dt>
+                <dd>
+                    This function takes a string as a parameter, which is the string that you want to add to an open file.
                 </dd>
             </dl>
         </main>
