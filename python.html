@@ -368,6 +368,56 @@
                 The one good thing I have to say about tuples is that a function can return a tuple. Sometimes you want 
                 a function to return more than one thing, and using a tuple is the only way to do that.
             </p>
+            <h3>Dictionaries</h3>
+            <p>
+                Dictionaries are a different kind of data collection. In lists and tuples and so on, data is stored 
+                kind of sequentially. In a dictionary, data is mapped to a location based on its value. A dictionary uses 
+                curly braces {} the qay a list uses square brackets []. It has values like other data collections, but has 
+                keys instead of index values. Instead of using numerical index values, keys are unordered and correspond 
+                to a specific meaning. A good example from the textbook is using a dictionary to store Spanish words and 
+                their English translations. Your keys would be "rojo", "gato", and "hola" while the values would be "red", 
+                "cat", and "hello". Instead of doing exampleDictionary[0], you would get a specific element by doing 
+                exampleDictionary["gato"], which would give you the value "cat".
+            </p>
+            <p>
+                You can create a dictionary by setting the dictionary name = {} to create an empty dicitonary which you can 
+                later add values to. You can also create a dictionary by putting the values directly into the brackets during 
+                initialization like this: exampleDictionary = {"gato": "cat", "rojo": "red", "hola": "hello"}. The left hand 
+                side must be the key and the right hand side must be the value, and the colon : specifies that this specific 
+                key is associated with this specific value. These key-value pairs are actually stored unpredicatably, so they 
+                are not stored chronologically or lexically or anything. There is some algorithm to figure out how they're 
+                stored, but it doesn't really matter too much.
+            </p>
+            <p>
+                You can use the del keyword on a dictionary to delete values, such as del exampleDictionary["gato"]. 
+                You can also reassign values, such as exampleDictionary["hola"] = "hi". Using the len keyword on a dictionary 
+                will return the number of key-value pairs in the dictionary. There are some other functions that you can use 
+                with dictionaries:
+            </p>
+            <dl>
+                <dt>keys()</dt>
+                <dd>
+                    This function returns something called a 'view' of the keys in the dictionary, which looks like this: 
+                    dict_keys(['apples', 'bananas', 'oranges', 'pears']). You can use the function list() to convert this to a 
+                    normal list.
+                </dd>
+                <dt>values()</dt>
+                <dd>
+                    This function returns something called a 'view' of the values in the dictionary, which looks like this: 
+                    dict_values(['apples', 'bananas', 'oranges', 'pears']). You can use the function list() to convert this to a 
+                    normal list.
+                </dd>
+                <dt>items()</dt>
+                <dd>
+                    This function returns something called a 'view' of the key-value pairs in the dictionary, which looks like: 
+                    dict_key_vals(['apples', 'bananas', 'oranges', 'pears']). You can use the function list() to convert this to a 
+                    normal list.
+                </dd>
+                <dt>get()</dt>
+                <dd>
+                    This function takes a key as a parameter and returns the value at that key.
+                </dd>
+            </dl>
             <h3>Using Files</h3>
             <p>
                 Most of the time (particularly for a marine bio/oceanography student using Python, I presume), your data 
@@ -1003,6 +1053,28 @@
                 <dt>write()</dt>
                 <dd>
                     This function takes a string as a parameter, which is the string that you want to add to an open file.
+                </dd>
+                <dt>keys()</dt>
+                <dd>
+                    This function returns something called a 'view' of the keys in the dictionary, which looks like this: 
+                    dict_keys(['apples', 'bananas', 'oranges', 'pears']). You can use the function list() to convert this to a 
+                    normal list.
+                </dd>
+                <dt>values()</dt>
+                <dd>
+                    This function returns something called a 'view' of the values in the dictionary, which looks like this: 
+                    dict_values(['apples', 'bananas', 'oranges', 'pears']). You can use the function list() to convert this to a 
+                    normal list.
+                </dd>
+                <dt>items()</dt>
+                <dd>
+                    This function returns something called a 'view' of the key-value pairs in the dictionary, which looks like: 
+                    dict_key_vals(['apples', 'bananas', 'oranges', 'pears']). You can use the function list() to convert this to a 
+                    normal list.
+                </dd>
+                <dt>get()</dt>
+                <dd>
+                    This function takes a key as a parameter and returns the value at that key.
                 </dd>
             </dl>
         </main>
