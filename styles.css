@@ -50,6 +50,11 @@ nav ul li a:visited {
     background-color: #CAD2C5;
     color: #2F3E46;
 }
+#vert_nav {
+    position: sticky;
+    left: 0;
+    display: block;
+}
 
 main {
     color: #2F3E46;
