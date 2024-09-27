@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            2024 Summer Learning
+        </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Summer 2024: Refresh of HTML, CSS, Python, and AP CSP</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="html.html" >HTML &#10025; </a>
+                </li>
+                <li>
+                    <a href="css.html" >CSS &#10025; </a>
+                </li>
+                <li>
+                    <a href="python.html" >Python</a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h3>Tutorial 1: Overview and Privatives</h3>
+            <p>
+                Racket is a descendent of some other programming languages, such as scheme and lisp (?).
+                It is designed for functional programming, and works better for it than languages like 
+                java or python. There is a "set" variable method, but we will not be using it since setting 
+                a variable to a specific value is for imperative programming like we've been doing and in 
+                functional programming you do not do this.
+            </p>
+            <p>
+                DrRacket is an IDE used for racket. We will use the 6.11 version, though this is not the 
+                newest version. It doesn't really matter though. 
+            </p>
+            <p>
+                To print, just use (print "Hello world!"). As you may notice, this is a little different 
+                than Java and Python in that Java and Python have the operator first and then the operand 
+                in the parenthesis. In languages descended from Lisp, the operator and operand(s) both go in 
+                the parenthesis, with the operator just coming first.
+            </p>
+            <p>
+                If you just put a number like 20, it evaluates to 20 ofc. If you put 9/10, it is stored as 
+                the fraction 9/10 rather than a floating point like in Python. You can also use imaginary 
+                or complex numbers in Racket. To find out if a value is a number, you can use the function 
+                (number? 20). Similarly, you can find out if the fraction 9/10 is exact by using the function 
+                (exact? 9/10). Racket will return #f or #t for true and false ofc, and in this case 9/10 is 
+                exact so we get #t. If you ask (exact? 0.9), you will get #f because 0.9 is not an exact 
+                number. You can also convert a fraction to a decimal by saying (exact->inexact 9/10), which 
+                will give you 0.9. You can go the other way and do (inexact->exact 0.9) which gives you this 
+                big long terrible fraction, because it uses a specific algorithm to produce a ratio. If you 
+                undo this by doing (exact->inexact(inexact->exact 0.9)), you will get 0.9 back out. exact, 
+                inexact, and number are all functions. They each take one argument.
+            </p>
+            <p>
+                If you enter false or true, you will get back out #f or #t. There is also a (boolean? #t) 
+                function that will tell you whether something (true or false) is a boolean or something (like 
+                0 or 1) is not a boolean. As a note, 1 and 0 can be booleans in languages like C, but are not 
+                considered to be in Racket. They are just considered numbers. You can ask if things are strings 
+                the same way you would for a boolean or number. For a character, you cannot do single quotes, 
+                because they have a different meaning in Racket. You do #\a for the character a. But you can, of 
+                course, also check if (character? #\a) which is #t here.
+            </p>
+            <p>
+                In Racket, operations are a prefix and operands come after. If you want to add two numbers, you 
+                say (+ 2 3) and get out 5. If you want to divide that sum by the sum of 2 times 5, you say 
+                (/ (+ 2 3) (* 2 5)). This is 1/2 because it first evaluates the (+ 2 3) and (* 2 5) to 5 and 10, 
+                then divides the 5 by the 10. If you use an inexact value anywhere in there, your answer will be 
+                inexact as well. As Hutchinson put it, "it contaminates it all the wya up the tree."
+            </p>
+            <p>
+                You can also compare numbers, such as (&lt; 5 10) which will return #t because 5 is in fact less than 
+                10. Also, he said "remember, it's prefix notation not infix notation" which is so wonderful &lt;3! 
+                Racket does have and, or, and not. An example is (or (&lt; 2 10) (&gt; 2 10)) which will be #t because 
+                one of those is true. If you put a not expression in front of that whole thing, you would get #f. 
+            </p>
+            <br>
+            <h3>Tutorial 2: S-Expressions and Lists</h3>
+            <p>
+               An s-expression is either a primitive or a pair of primitives. A pair is created with the (cons 1 2) 
+               function, which returns (1 . 2). You can access the first thing in that pair by using the function 
+               (car (cons 1 2)) and the second item by using (cdr (cons 1 2)). You can check if something is a pair by 
+               using the (pair? (cons 1 2)) function. You can also create a pair of pairs. You can view this kind of like 
+               a tree! You can do all the different combinations of car and cdr to access each node in this tree. 
+            </p>
+            <p>
+                A list in racket is a pair where the cdr is a list, where the cdr item is a null value. Then, you can use 
+                the cons function to continue adding elements to that list, which looks like (cons 1 (cons 2 (cons 3 null))) 
+                which gives you a list of 1 2 3. If you take the car of that whole thing, you get 1. If you take the cdr of 
+                that whole thing, you get 2 3. if you take the car of the cdr of that whole thing, you just get 2, and the 
+                cdr of the cdr of that whole thing is 3 paired with null, which is just there to terminate the list. It's 
+                also kind of a tree.
+            </p>
+            <p>
+                Okay so what he would now like to add is that you can actually just do (list 1 2 3) and there you go. You can 
+                also do (append (list 1 2) (list 3 4)) to add 3 and 4 to that existing list of 1 2. You can also just do '(1 2 3) 
+                to create and print out a list of 1 2 3.
+            </p>
+            <h3>Tutorial 3: Functions</h3>
+            <p>
+                In Racket, comments are with a semicolon ; for one line or matching pound blocks #| and |# on either side of a 
+                block. You can also use #; to comment out just one s-expression.  
+            </p>
+            <p>
+                We define a variable by using the define keyword as such (define x 5). Again, for functional programming, we 
+                don't want to directly set x to 5 and then later directly set x to 6. We are treating them as immutable. You 
+                can assign a variable to an expression rather than a single value.
+            </p>
+            <p>
+                A lambda function is a function that creates and returns a function. So (lambda (x) (* x x)) creates a function/
+                procedure that multiplies x by x. Then, you use this function by putting parenthesis around this whole thing 
+                followed by the argument you're passing to it. So ((lambda (x) (* x x)) 5) will give you 25 because it uses the 
+                lambda function we created with the input 5 to multiply 5 by 5. You can also put a name in there by simply putting 
+                it after the define function like this: (define square (lambda (x) (* x x))). This is saying, create a variable 
+                named square, then set it equal to a procedure that takes an argument x, and multiplies x by x. If you enter (square 5), 
+                it will then run that function with five as the input, putting out 25.
+            </p>
+            <p>
+                Another way to define functions is by doing (define (square x) (* x x)) which is the same thing without the lambda. 
+                This is more familiar, and is a valid shortcut. He's using this notation throughout all this where he drops down a 
+                line every time something is like. compound. So like (+ (square (car v)) *line break* (square (car (cdr v)))). This is 
+                part of a function he's doing on a list which is why it's car and cdr, and it's not teaching anything new which is why 
+                I didn't put it in here.
+            </p>
+            <p>
+                You can also give a function two arguments easily just by doing ((lambda (x y) (+ x y)) 2 4) which will give you 6. You 
+                can also have a function with no arguments such as (define foo (lambda () 5)) which just prints out 5. If you just enter 
+                foo in the command line, it will just tell you it's a procedure by printing #&lt;procedure:foo&gt; (when foo is the name 
+                of the function). To call that function, you just do (foo) with no arguments.
+            </p>
+            <p>
+                Racket is all set up in like s-expressions because it allows it to manipulate code which is what you want idk i didn't 
+                really understand what he was saying here tbh
+            </p>
+            <h3>Tutorial 4: Conditionals</h3>
+            <p>
+               You can evaluate conditionals by creating expressions. For example, (if (&lt; 5 10) "smaller" "larger") which tells it to 
+               return "smaller" if the expression is true and "larger" if it is false, so it returns "smaller" in this case. Another 
+               example is (define (abs x) (if (&lt; x 0) (- x) x)) which creates the function abs for absolute value. If the value it is 
+               given is less than 0 ie negative, it returns -x. Else if the expression is false ie x is greater than 0 ie positive or 0, 
+               it just returns x.
+            </p>
+            <p>
+                You can also use switch statements in Racket vis the cond statement. For example, (define (abs x) (cond [(&lt; x 0) (-x)] 
+                [(else x)])). This function says if the first condition that x is less than 0 ie negative is true, return -x. If not, it 
+                goes to the next statement which just says else return x.
+            </p>
+            <p>
+                Also, you can use square brackets at any time as long as you match them properly. Even just [+ 5 7] works the same as (+ 5 7). 
+            </p>
+            <p>
+                You can also use (equal? 5 5) to test the equality of two values. 
+            </p>
+            <p>
+                Here's another switch that returns the military name of the character: <br>
+                (define (alpha c)<br>&nbsp;&nbsp;&nbsp;(cond [(equal? c #\a) "alpha"]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[(equal? c #\b) "beta"]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[else "i quit"]))<br>
+                This very complicated function (for our level rn) can be run with (alpha #\a) to give "alpha" and (alpha #\d) to give "i give up".
+            </p>
+            <h3>Tutorial 5: Tail Recursion</h3>
+            <p>
+                
+            </p>
+        </main>
+        <footer>
+            <p>source: tutorials by Brian Hutchinson</p>
+        </footer>
+    </body>
+</html>
