@@ -20,7 +20,7 @@
                     <a href="css.html" >CSS &#10025; </a>
                 </li>
                 <li>
-                    <a href="python.html" >PythonCSS &#10025; </a>
+                    <a href="python.html" >Python &#10025; </a>
                 </li>
                 <li>
                     <a href="index.html">Home</a>
@@ -193,7 +193,19 @@
             </p>
             <h3>Tutorial 6: Map and Apply</h3>
             <p>
-
+              You can pass around functions and return them like variables, which is a very powerful application.   
+            </p>
+            <p>
+                The apply function collapses a list into one value by adding them all up. For example, (apply + (list 70 75 80)) gives you 225.
+            </p>
+            <h3>Tutorial 7: Let Function</h3>
+            <p>
+                Let is a function that allows you to temporarily bind values. Basically, temporarily define a variable. Here's an example: 
+                (let ([x 5]) (+ x x)). This is saying "let x = 5" and then perform this operation using this temporary variable.
+            </p>
+            <p>
+                There is also a way to use let that allows you to bind two variables. This is very easy, you just add a star after the let keyword 
+                as such: (let* ([x 5] [y (+ x 1)]) (+ x y)) which binds x to 5 and y to x + 5 or 6, then adds x and y to give you 11.
             </p>
         </main>
         <footer>
