@@ -20,7 +20,7 @@
                     <a href="css.html" >CSS &#10025; </a>
                 </li>
                 <li>
-                    <a href="python.html" >Python</a>
+                    <a href="python.html" >PythonCSS &#10025; </a>
                 </li>
                 <li>
                     <a href="index.html">Home</a>
@@ -166,7 +166,34 @@
             </p>
             <h3>Tutorial 5: Tail Recursion</h3>
             <p>
-                
+                Here's an example of a recursive function in Racket:<br>
+                (define (factorial n)<br>
+                &nbsp;&nbsp;&nbsp;(if (= n 1)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(* n (factorial (- n 1)))))
+            </p>
+            <p>
+                As you can see, this function has an if statement to check for the base case, and if that is not met, it calls itself again. 
+                The formatting could be a little scary only in the way that it looks pretty different, but there's nothing funtionally new here.
+            </p>
+            <p>
+                Tail recursion is different from normal recursion. In normal recursion, the parameter n is given the value 10 and then runs through 
+                the function. The recursive calls go through, resetting the parameter n. This takes up space in the stack, so tail recursion is 
+                there to reduce stack use. The recursive call is returned immediately after being evaluated, rather than being stored. Here's an 
+                alternative to our function that is tail recursive:
+                (define (alt-factorial n [counter 1] [product 1])<br>
+                &nbsp;&nbsp;&nbsp;(if (> counter n)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;product<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(alt-factorial n (+ counter 1) (* product counter))))<br>
+                This method uses a counter and product (setting them to have a default of 1) to use for recursive calls so that the function only 
+                runs with the variables counter and product on recursive calls, which means it isn't storing new and new and new values of n.
+            </p>
+            <p>
+                A function is tail recursive if there is nothing left to do with the value returned from a recursive call except return it.
+            </p>
+            <h3>Tutorial 6: Map and Apply</h3>
+            <p>
+
             </p>
         </main>
         <footer>
