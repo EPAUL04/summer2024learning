@@ -35,10 +35,6 @@ nav ul li a:hover {
     color: white;
     text-decoration: solid;
 }
-nav ul li a:visited {
-    color: #84A98C;
-    text-decoration: none;
-}
 .darkmode nav {
     background-color: #CAD2C5;
 }
@@ -56,7 +52,6 @@ main {
     height: 100%;
     padding: 3%;
     line-height: 20px;
-    float: right;
 }
 main img {
     width: 45%;
@@ -96,6 +91,9 @@ main .psuedo {
 .darkmode main p, .darkmode main h1, .darkmode main h3, .darkmode main ol li, .darkmode main ul li, .darkmode main dl dd, .darkmode main dl dt {
     color:white;
 }
+main #content {
+    float: right;
+}
 main #vert_nav {
     position: sticky;
     left: 0;
@@ -113,7 +111,7 @@ main #vert_nav ul li a {
     color: white;
 }
 main #vert_nav ul li a:hover {
-    color: darkgreen;
+    color: black;
 }
 
 footer {
