@@ -102,11 +102,14 @@ main #vert_nav {
     display: block;
     float: left;
 }
-main #vert_nav ul {
+main #vert_nav ul li {
     list-style-type: none;
 }
 main #vert_nav ul li a {
     text-decoration: none;
+}
+main #vert_nav ul li a:hover {
+    color: white;
 }
 
 footer {
