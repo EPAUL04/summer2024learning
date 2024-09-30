@@ -35,6 +35,9 @@ nav ul li a:hover {
     color: white;
     text-decoration: solid;
 }
+nav ul li a:visited {
+    color: #84A98C;
+}
 .darkmode nav {
     background-color: #CAD2C5;
 }
@@ -52,6 +55,7 @@ main {
     height: 100%;
     padding: 3%;
     line-height: 20px;
+    clear: both;
 }
 main img {
     width: 45%;
