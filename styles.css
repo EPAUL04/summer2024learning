@@ -96,6 +96,7 @@ main .psuedo {
 }
 main #content {
     display: block;
+    float: right;
 }
 main #vert_nav {
     position: sticky;
@@ -110,9 +111,9 @@ main #vert_nav ul li {
 main #vert_nav ul li a {
     text-decoration: none;
 }
-.darkmode main #vert_nav ul li a:hover {
+/* .darkmode main #vert_nav ul li a:hover {
     color: white;
-}
+} */
 main #vert_nav ul li a:hover {
     color: black;
 }
