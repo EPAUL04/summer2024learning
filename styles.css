@@ -96,15 +96,13 @@ main .psuedo {
 }
 main #content {
     display: block;
-    float: right;
+    left: 120px;
 }
 main #vert_nav {
-    /* position: sticky; */
-    position: fixed;
+    position: sticky;
     left: 0;
     top: 20px;
     display: block;
-    float: left;
 }
 main #vert_nav ul li {
     list-style-type: none;
