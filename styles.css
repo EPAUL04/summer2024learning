@@ -95,8 +95,7 @@ main .psuedo {
     color:white;
 }
 main #content {
-    float: right;
-    clear: both;
+    display: block;
 }
 main #vert_nav {
     position: sticky;
