@@ -99,7 +99,8 @@ main #content {
     float: right;
 }
 main #vert_nav {
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
     left: 0;
     top: 20px;
     display: block;
