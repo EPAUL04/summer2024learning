@@ -29,7 +29,7 @@ nav ul li a {
 }
 nav ul li button {
     background-color: #2F3E46;
-    color: #84A98C;
+    /* color: #84A98C; */
 }
 nav ul li a:hover {
     color: white;
@@ -111,9 +111,9 @@ main #vert_nav ul li {
 main #vert_nav ul li a {
     text-decoration: none;
 }
-/* .darkmode main #vert_nav ul li a:hover {
+.darkmode main #vert_nav ul li a:hover {
     color: white;
-} */
+}
 main #vert_nav ul li a:hover {
     color: black;
 }
