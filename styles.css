@@ -103,6 +103,7 @@ main #vert_nav {
     left: 0;
     top: 20px;
     display: block;
+    float: left;
 }
 main #vert_nav ul li {
     list-style-type: none;
