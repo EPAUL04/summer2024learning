@@ -96,7 +96,7 @@ main .psuedo {
 }
 main #content {
     display: block;
-    margin-left: 120px;
+    margin-left: 275 px;
 }
 main #vert_nav {
     position: sticky;
