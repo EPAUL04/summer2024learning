@@ -95,6 +95,7 @@ main .psuedo {
     color:white;
 }
 main #content {
+    clear: both;
     display: block;
     margin-left: 275 px;
 }
