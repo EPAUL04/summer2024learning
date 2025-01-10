@@ -26,6 +26,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
+    color: #84A98C;
 }
 nav ul li button {
     background-color: #2F3E46;
@@ -124,6 +125,7 @@ footer {
     background-color: #CAD2C5;
     color: #52796F;
     padding-left: 5%;
+    clear: both;
 }
 footer p {
     display: inline;
