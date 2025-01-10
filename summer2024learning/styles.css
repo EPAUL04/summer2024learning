@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #52796F;
+    color: white;
+    height: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+nav {
+    text-align: center;
+    background-color: #2F3E46;
+    height: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li button {
+    background-color: #2F3E46;
+    color: #84A98C;
+}
+nav ul li a:hover {
+    color: white;
+    text-decoration: solid;
+}
+nav ul li a:visited {
+    color: #84A98C;
+}
+.darkmode nav {
+    background-color: #CAD2C5;
+}
+.darkmode nav ul li a {
+    color:#2F3E46;
+}
+.darkmode nav ul li button {
+    background-color: #CAD2C5;
+    color: #2F3E46;
+}
+
+main {
+    color: #2F3E46;
+    background-color: white;
+    height: 100%;
+    padding: 3%;
+    line-height: 20px;
+}
+main img {
+    width: 45%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main h1, main h2, main h3 {
+    padding-top: 10px;
+}
+main p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+main a {
+    color: #52796F;
+    text-decoration: none;
+}
+main ol, main ul {
+    padding-left: 3%;
+}
+main dl {
+    padding-bottom: 1%;
+}
+main dl dt {
+    padding-top: 1%;
+    text-decoration: wavy;
+}
+main .psuedo {
+    color:#52796F;
+    font-family:'Courier New', Courier, monospace;
+}
+.darkmode main {
+    background-color: #2F3E46;
+    padding: 3%;
+    line-height: 20px;
+}
+.darkmode main p, .darkmode main h1, .darkmode main h3, .darkmode main ol li, .darkmode main ul li, .darkmode main dl dd, .darkmode main dl dt {
+    color:white;
+}
+main #content {
+    float: right;
+    display: block;
+    margin-left: 275 px;
+}
+main #vert_nav {
+    position: sticky;
+    left: 0;
+    top: 20px;
+    display: block;
+    float: left;
+}
+main #vert_nav ul li {
+    list-style-type: none;
+}
+main #vert_nav ul li a {
+    text-decoration: none;
+}
+.darkmode main #vert_nav ul li a:hover {
+    color: white;
+}
+main #vert_nav ul li a:hover {
+    color: black;
+}
+
+footer {
+    font-size: small;
+    background-color: #CAD2C5;
+    color: #52796F;
+    padding-left: 5%;
+}
+footer p {
+    display: inline;
+}
+footer p a {
+    text-decoration: none;
+    color: #84A98C;
+}

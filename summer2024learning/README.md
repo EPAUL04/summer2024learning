@@ -7,3 +7,11 @@ python refresh
 
 ap csp refresh
 - code.org ~ https://studio.code.org/courses/csp-2021
+
+CSS and HTML refresh
+- old notebook from Web Design
+
+
+# plan
+- begin python review from textbook
+- begin ap csp review from code.org
